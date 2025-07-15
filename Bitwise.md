@@ -34,10 +34,7 @@ public class Bitwise
 		System.out.println(f);
 		System.out.println(g);
 		System.out.println(h);
-		String ev="even";
-		String od="odd";
-		String res=(a%2==0)?ev:od;
-                System.out.println(res);
+		
 		
 
 		
