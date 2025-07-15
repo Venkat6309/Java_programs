@@ -18,40 +18,66 @@ It then prints the collected data in a readable format.
 
 ```java
 import java.util.Scanner;
-
-public class userInput {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-
-        String name = sc.nextLine();
-        int roll = sc.nextInt();
-        char section = sc.next().charAt(0);
-        float percentage = sc.nextFloat();
-
-        System.out.println("Name: " + name);
-        System.out.println("Roll Number: " + roll);
-        System.out.println("Section: " + section);
-        System.out.println("Percentage: " + percentage);
-    }
+class userinputs
+{
+	public static void main(String[] args) {
+	    Scanner sc=new Scanner(System.in);
+	    
+	    System.out.print("Enter the name: ");
+	    String name = sc.nextLine();           // for string with spaces
+	    
+	    System.out.print("Enter the age: ");
+	    int age = sc.nextInt();               // for int
+	    sc.nextLine();                       // after the int or double the value cannot taken by scanner class then that we will use "sc.nextLine()"
+	    
+	    System.out.print("Enter the favorite color: ");
+	    String color = sc.next();            //for string without spaces
+	    
+	    System.out.print("Enter mobile no: "); 
+	    long mobile_no = sc.nextLong();       // for long 
+	    
+	    
+	    System.out.println("My name is "+name);
+	    System.out.println("My age is "+age);
+	    System.out.println("favorite color "+color);
+	    System.out.println("Mobile no "+mobile_no);
+	    
+	    
+	    
+	}
 }
+
+/* 
+      Method	                   Description
+
+    nextBoolean()        	Reads a boolean value from the user
+    nextByte()	            Reads a byte value from the user
+    nextDouble()	        Reads a double value from the user
+    nextFloat()	            Reads a float value from the user
+    nextInt()	            Reads a int value from the user
+    nextLine()          	Reads a String value from the user
+    nextLong()          	Reads a long value from the user
+    nextShort()         	Reads a short value from the user
+
+
 ```
 
 ## ✅ Example Input/Output
 
 ### Input:
 ```
-Alice Johnson
-101
-B
-89.5
+Enter the name: venkat
+Enter the age: 23
+Enter the favorite color: green
+Enter mobile no: 973727227263
 ```
 
 ### Output:
 ```
-Name: Alice Johnson
-Roll Number: 101
-Section: B
-Percentage: 89.5
+My name is venkat
+My age is 23
+favorite color green
+Mobile no 973727227263
 ```
 
 ## 🔧 Notes
