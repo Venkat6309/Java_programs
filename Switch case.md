@@ -28,6 +28,7 @@ switch (number) {
     default:
         System.out.println("Not in range");
 }
+---
 ✅ Key Points:
 Uses case labels for comparison.
 
@@ -39,7 +40,7 @@ Without break, it causes fall-through to the next case.
 Java 14 introduced switch expressions with cleaner, safer syntax.
 
 ✅ Arrow Syntax (→)
-java
+---java
 Copy
 Edit
 int day = 2;
@@ -50,8 +51,9 @@ String result = switch (day) {
     default -> "Invalid";
 };
 System.out.println(result);
+---
 ✅ Multiple Case Labels
-java
+---java
 Copy
 Edit
 int day = 6;
@@ -60,8 +62,9 @@ String type = switch (day) {
     case 2, 3, 4, 5, 6 -> "Weekday";
     default -> "Invalid day";
 };
+---
 ✅ Switch with Block + yield
-java
+---java
 Copy
 Edit
 int marks = 85;
@@ -77,6 +80,8 @@ String grade = switch (marks / 10) {
         yield "F";
     }
 };
+---
+---
 🔸 yield is used to return a value from a block-style case in a switch expression.
 
 🔷 All Possibilities in Java Switch
@@ -88,7 +93,8 @@ Arrow syntax	❌ No	✅ Yes (->)
 Fall-through by default	✅ Yes	❌ No (default is safe)
 Case blocks with yield	❌ No	✅ Yes
 Used as an expression	❌ No	✅ Yes
-
+---
+---
 🔷 Data Types Allowed in Switch
 Data Type	Allowed in Switch?	Notes
 byte	✅ Yes	Primitive
@@ -103,9 +109,9 @@ long	❌ No	Not supported
 float	❌ No	Not supported
 double	❌ No	Not supported
 boolean	❌ No	Use if-else instead
-
+---
 🔷 Example: Enum with Switch
-java
+---java
 Copy
 Edit
 enum TrafficSignal { RED, YELLOW, GREEN }
@@ -123,19 +129,4 @@ public class Main {
         System.out.println("Signal action: " + action);
     }
 }
-🔷 Summary
-The switch statement improves readability in multi-branch decision structures.
-
-Java 14 introduced expressive, concise, and safer syntax with:
-
-Arrow labels (->)
-
-Multiple case values
-
-yield and block-style expressions
-
-Return values from switch
-
-Valid types include primitives (int, char, etc.), String, enum, and wrapper classes.
-
-📌 Prefer enhanced switch expressions in modern Java versions (14+) for cleaner and safer code.
+---
