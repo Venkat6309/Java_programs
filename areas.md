@@ -1,4 +1,6 @@
 ```java
+Find the areas of the shapes
+
 class areas{
 public static void main(String[]args)
 {
