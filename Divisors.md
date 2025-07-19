@@ -1,5 +1,5 @@
 
-# Divisors.java
+# Divisors (or) factors of a given number
 
 ## 📜 Description
 
