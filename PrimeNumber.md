@@ -1,6 +1,6 @@
-# Optimal Prime Number Checker (Java)
+# Max of Four Numbers (Java)
 
-This Java program checks whether a given number is a **prime number** using an optimized divisor counting approach.
+This Java program finds the **maximum among four numbers** entered by the user.
 
 ---
 
@@ -21,48 +21,42 @@ System.out.println(res);
 
 ## 📘 Description
 
-This program checks if a number is prime by counting its exact number of divisors. A prime number has exactly **two distinct divisors**: 1 and itself.
+The program uses conditional statements to compare four integer values and determine the largest among them.
 
 ### 🧠 Logic Used
 
-- Loop runs from `i = 1` to `√n` (i.e., `i * i <= n`).
-- For each `i`, if `i` divides `n`, it counts both `i` and `n/i` as divisors.
-- If `i == n/i` (perfect square), only one count is added.
-- The number is **prime if total divisors = 2**.
-
----
-
-## 🧪 Example
-
-### For `n = 12`
-- Divisors: 1, 2, 3, 4, 6, 12 → 6 divisors
-- Output: `Not a Prime Number`
-
-### For `n = 13`
-- Divisors: 1, 13 → 2 divisors
-- Output: `Prime Number`
+- It compares the four integers using either nested `if-else` conditions or chained comparisons.
+- The value which satisfies the condition of being greater than or equal to all others is printed as the maximum.
 
 ---
 
 ## ⏱ Time Complexity
 
-- **O(√n)**: Efficient due to reduced loop range.
+- **O(1)**: Constant time as only a fixed number of comparisons (3) are made.
 
 ## 📦 Space Complexity
 
-- **O(1)**: Constant space usage.
+- **O(1)**: Only a few integer variables are used.
 
 ---
 
-## ✅ Sample Output
+## 🧪 Example
 
+### Input:
 ```text
-Prime Number      // when n = 13
-Not a Prime Number // when n = 12
+Enter four numbers: 10 25 8 17
+```
+
+### Output:
+```text
+The maximum number is: 25
 ```
 
 ---
 
 ## 📝 Notes
 
-This approach is more efficient than checking all numbers from 1 to `n`. Still, for large-scale prime checking, using probabilistic or sieve methods may be faster.
+- This is a basic program useful for understanding conditional logic and comparative operators in Java.
+- For larger sets of numbers, arrays and loops are recommended.
+
+
