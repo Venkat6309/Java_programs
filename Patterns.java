@@ -1,4 +1,4 @@
-/* Java Patterns
+ Java Patterns
 class Pattern1{
 	public static void main(String []args){
 		int n=5;
@@ -1541,7 +1541,7 @@ class Pattern53{
 @@@@ @@@@
 **********
 ---------------------------------------------------------------
-*/
+
 class Pattern54{
 	public static void main(String args[]){
 		int n=5;
